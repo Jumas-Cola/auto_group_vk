@@ -1,4 +1,4 @@
-auto_group_vk ![Python 3.6](https://img.shields.io/pypi/pyversions/vk_api.svg)
+auto_group_vk ![Python 3.6](https://pp.userapi.com/c846523/v846523407/b716d/N3RXKWFcPS0.jpg)
 ======
 **auto_group_vk** – скрипт на Python, который автоматически наполнаяет группу контентом из других групп, для социальной сети Вконтакте (vk.com)
 
