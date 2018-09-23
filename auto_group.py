@@ -114,7 +114,7 @@ while True:
 
         if repost:
             try:
-                get_last_post(vk, last_id, owner_id)
+                last_id = get_last_post(vk, last_id, owner_id)
             except:
                 pass
         if add_to_friends:
