@@ -1,0 +1,24 @@
+{
+  "group_id": 169696294,
+  "post_text": "#Test",
+  "donors": [
+    -168416289,
+    -168416289
+  ],
+  "stop_words": [
+    "конкурс",
+    "розыгрыш",
+    "приз",
+    "итоги",
+    "результаты",
+    "важн"
+  ],
+  "add_friends": 1,
+  "del_requests": 1,
+  "repost": 1,
+  "watermark": 0,
+  "watermark_img": "watermark.png",
+  "sqlog": 1,
+  "access_token": "",
+  "v": "5.92"
+}
