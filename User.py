@@ -168,6 +168,8 @@ class User:
                 if attachment['type'] == 'doc':
                     doc = attachment['doc']
                     attachments += f'doc{doc["owner_id"]}_{doc["id"]},'
+            if not attachments:
+                continue
             break
         return {'donor_id': donor_id, 'donor_post_id': donor_post_id, 'attachments': attachments, 'text': text}
 
