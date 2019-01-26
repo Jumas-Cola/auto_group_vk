@@ -137,7 +137,7 @@ class User:
             post = self.vk.method('wall.get', {'owner_id': donor_id, 'offset': random.randint(
                 2, count - 1), 'count': 1, 'filter': 'owner', 'v': self.v})['items'][0]
             donor_post_id = post['id']
-            text = post['text']
+            text = post['text'].lower()
             if any(word in text for word in self.stop_words):
                 continue
             if post['marked_as_ads']:
