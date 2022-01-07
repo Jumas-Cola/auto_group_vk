@@ -39,8 +39,11 @@ class User:
 
     def add_all_to_friends(self):
         for request_to_friends in self.vk.method('friends.getRequests', {'out': 0, 'v': self.v})['items']:
-            self.vk.method('friends.add', {
-                           'user_id': request_to_friends, 'v': self.v})
+            try:
+                self.vk.method('friends.add', {
+                               'user_id': request_to_friends, 'v': self.v})
+            except:
+                pass
 
     """
         Отписаться от всех заявок
@@ -48,8 +51,11 @@ class User:
 
     def friends_deny_request(self):
         for request_to_friends in self.vk.method('friends.getRequests', {'out': 1, 'v': self.v})['items']:
-            self.vk.method('friends.delete', {
-                           'user_id': request_to_friends, 'v': self.v})
+            try:
+                self.vk.method('friends.delete', {
+                               'user_id': request_to_friends, 'v': self.v})
+            except:
+                pass
 
     """
         Загрузка изображения на сервер и получение объекта photo
