@@ -1,3 +1,3 @@
 requests
 vk_api
-PIL
+pillow
