@@ -19,6 +19,7 @@
   "watermark": 0,
   "watermark_img": "watermark.png",
   "sqlog": 1,
-  "access_token": "",
+  "login": "",
+  "password": "",
   "v": "5.92"
 }

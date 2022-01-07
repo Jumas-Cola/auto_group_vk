@@ -29,7 +29,8 @@ class User:
         self.watermark = data['watermark']
         self.watermark_img = data['watermark_img']
         self.sqlog = data['sqlog']
-        self.vk = vk_api.VkApi(token=data['access_token'])
+        self.vk = vk_api.VkApi(data['login'], data['password'])
+        self.vk.auth()
         self.v = data['v']
 
     """
